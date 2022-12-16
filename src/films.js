@@ -80,13 +80,13 @@ function moviesAverageByCategory(array,genere) {
     return categoria.genre
     }
     })
-    let solucio= (result.reduce((counter,item)=>counter+item.score,0)/result.length).toFixed(0)
+    let solucio= (result.reduce((counter,item)=>counter+item.score,0)/result.length).toFixed(2)
    console.log("EXERCICE 6 ->",solucio)
    return solucio;
 
 }
 
-moviesAverageByCategory(movies, "Drama")
+//moviesAverageByCategory(movies, "Drama")
 
 // Exercise 7: Modify the duration of movies to minutes
 function hoursToMinutes(array) {
